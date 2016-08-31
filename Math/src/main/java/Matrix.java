@@ -66,8 +66,8 @@ public class Matrix {
 
     /**
      *
-     * @param a n * m matrix
-     * @param b n * m matrix
+     * @param a n*m matrix
+     * @param b n*m matrix
      * @return true if all values are equal, false if values are not equal
      */
     static boolean isEqual(int[][] a, int[][] b){
