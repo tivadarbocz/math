@@ -93,7 +93,4 @@ public class Matrix {
         }
         return true;
     }
-    //boolean isNotEqual
-    //boolean isLesser
-    //boolean isLesserOrEqual
 }
