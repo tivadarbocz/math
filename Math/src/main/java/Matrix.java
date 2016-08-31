@@ -25,12 +25,13 @@ public class Matrix {
     ,
      */
     public static int[][] scalarMultiplication(int[][] mtx, int value){
+        int[][] tmpMtx = new int[mtx.length][mtx[0].length];
         for(int i = 0; i < mtx.length; ++i){
             for(int j = 0; j < mtx[0].length; ++j){
-                mtx[i][j] =  mtx[i][j] * value;
+                tmpMtx[i][j] =  mtx[i][j] * value;
             }
         }
-        return mtx;
+        return tmpMtx;
     }
 
     /**
