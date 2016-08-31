@@ -20,15 +20,15 @@ public class Matrix {
     /**
      *
      * @param mtx n*m matrix
-     * @param value value of the multiplication
+     * @param scalar value of the multiplication
      * @return (cA)i,j = c · Ai,j.   The product cA of a number c (also called a scalar in the parlance of abstract algebra) and a matrix A is computed by multiplying every entry of A by c:
     ,
      */
-    public static int[][] scalarMultiplication(int[][] mtx, int value){
+    public static int[][] scalarMultiplication(int[][] mtx, int scalar){
         int[][] tmpMtx = new int[mtx.length][mtx[0].length];
         for(int i = 0; i < mtx.length; ++i){
             for(int j = 0; j < mtx[0].length; ++j){
-                tmpMtx[i][j] =  mtx[i][j] * value;
+                tmpMtx[i][j] =  mtx[i][j] * scalar;
             }
         }
         return tmpMtx;
