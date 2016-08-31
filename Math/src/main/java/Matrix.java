@@ -57,19 +57,10 @@ public class Matrix {
     public static void printMatrix(int[][] mtx){
         for(int i = 0; i < mtx.length; ++i){
             for(int j = 0; j < mtx[0].length; ++j){
-                System.out.print(mtx[i][j] + "\t"/*makeSpace(String.valueOf(mtx[i][j]).length())*/);
+                    System.out.print((mtx[i][j] < 0 ? "": " ") + mtx[i][j] + "\t");
             }
             System.out.print(System.lineSeparator());
         }
-    }
-
-    public String makeSpace(int n){
-        StringBuilder sb = new StringBuilder();
-        for(int i = 0; i < n; ++i){
-            sb.append(" ");
-        }
-
-        return sb.toString();
     }
 
     /**
