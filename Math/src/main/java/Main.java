@@ -1,8 +1,12 @@
+import printer.ConsolePrinter;
+
 /**
  * Created by Tivadar Bocz on 2016.08.31..
  */
 public class Main {
     public static void main(String[] args) {
+        ConsolePrinter consolePrinter = new ConsolePrinter();
+
         int mtx[][] = {
                 {1, 2, -3},
                 {4, -2, 5}
@@ -13,11 +17,11 @@ public class Main {
                 {3, 1, -8}
         };
 
-        Matrix.printMatrix(mtx);
-        Matrix.printMatrix(mtx2);
-        //Matrix.printMatrix(Matrix.transposition(mtx));
-        //Matrix.printMatrix(Matrix.scalarMultiplication(mtx, 2));
-        //Matrix.printMatrix(Matrix.sum(mtx,mtx2));
+        Matrix.printMatrix(consolePrinter,mtx);
+        Matrix.printMatrix(consolePrinter,mtx2);
+        //Matrix.printMatrix(consolePrinter, Matrix.transposition(mtx));
+        //Matrix.printMatrix(consolePrinter, Matrix.scalarMultiplication(mtx, 2));
+        //Matrix.printMatrix(consolePrinter, Matrix.sum(mtx,mtx2));
     }
 }
 
