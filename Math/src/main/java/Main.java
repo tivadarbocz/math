@@ -1,4 +1,5 @@
 import printer.ConsolePrinter;
+import printer.FilePrinter;
 
 /**
  * Created by Tivadar Bocz on 2016.08.31..
@@ -6,6 +7,7 @@ import printer.ConsolePrinter;
 public class Main {
     public static void main(String[] args) {
         ConsolePrinter consolePrinter = new ConsolePrinter();
+        FilePrinter filePrinter = new FilePrinter("c:\\Users\\Admin\\Desktop\\test1.txt");
 
         int mtx[][] = {
                 {1, 2, -3},
@@ -17,7 +19,7 @@ public class Main {
                 {3, 1, -8}
         };
 
-        Matrix.printMatrix(consolePrinter,mtx);
+        Matrix.printMatrix(filePrinter,mtx);
         Matrix.printMatrix(consolePrinter,mtx2);
         //Matrix.printMatrix(consolePrinter, Matrix.transposition(mtx));
         //Matrix.printMatrix(consolePrinter, Matrix.scalarMultiplication(mtx, 2));
