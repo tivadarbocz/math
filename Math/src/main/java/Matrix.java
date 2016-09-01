@@ -1,4 +1,4 @@
-import printer.IPrinter;
+import printer.IMatrixPrinter;
 
 /**
  * Created by Tivadar Bocz on 2016.08.31..
@@ -56,7 +56,7 @@ public class Matrix {
         }
     }
 
-    public static void printMatrix(IPrinter printer, int[][] mtx){
+    public static void printMatrix(IMatrixPrinter printer, int[][] mtx){
         printer.print(mtx);
     }
 

@@ -9,7 +9,7 @@ import java.io.UnsupportedEncodingException;
 /**
  * Created by Tivadar Bocz on 2016.09.01..
  */
-public class FilePrinter implements IPrinter{
+public class FilePrinter implements IMatrixPrinter {
     private Logger logger = Logger.getLogger(FilePrinter.class);
     String fileName;
 
