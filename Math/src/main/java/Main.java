@@ -20,6 +20,7 @@ public class Main {
 
         Matrix.printMatrix(consolePrinter,mtx);
         Matrix.printMatrix(consolePrinter,mtx2);
+        Matrix.printMatrix(consolePrinter,Matrix.generateNxMRandomMatrix(5, 6, 0, 1));
         //Matrix.printMatrix(consolePrinter, Matrix.transposition(mtx));
         //Matrix.printMatrix(consolePrinter, Matrix.scalarMultiplication(mtx, 2));
         //Matrix.printMatrix(consolePrinter, Matrix.sum(mtx,mtx2));

@@ -55,4 +55,20 @@ public class MatixTest {
 
         assertEquals(Matrix.isEqual(mtxT, Matrix.transposition(mtx)),true);
     }
+
+    @Test
+    public void generateNxMRandomMatrixTest(){
+        int n = 5;
+        int m = 6;
+        int low = 0;
+        int high = 1;
+        int[][] mtx = Matrix.generateNxMRandomMatrix(n,m,low,high);
+        assertEquals(mtx.length,n);
+        assertEquals(mtx[0].length,m);
+        for(int i = 0; i < n; ++i){
+            for(int j = 0; j < m; ++j){
+                assertEquals((mtx[i][j] >= low && mtx[i][j] <= high),true);
+            }
+        }
+    }
 }

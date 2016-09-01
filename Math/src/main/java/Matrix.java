@@ -1,5 +1,7 @@
 import printer.IMatrixPrinter;
 
+import java.util.Random;
+
 /**
  * Created by Tivadar Bocz on 2016.08.31..
  */
@@ -58,6 +60,25 @@ public class Matrix {
 
     public static void printMatrix(IMatrixPrinter printer, int[][] mtx){
         printer.print(mtx);
+    }
+
+    /**
+     * Generate n*m matrix with rqandom values between low and high values
+     * @param n
+     * @param m
+     * @param low
+     * @param high
+     * @return
+     */
+    public static int[][] generateNxMRandomMatrix(int n, int m, int low, int high){
+        Random r = new Random();
+        int[][] mtx = new int[n][m];
+        for(int i = 0; i < n; ++i){
+            for(int j = 0; j < m; ++j){
+                mtx[i][j] = r.nextInt(high+1-low) + low;
+            }
+        }
+        return mtx;
     }
 
     /**
